@@ -21,8 +21,9 @@ html, body {
 
   h2 {
     text-align: center;
-    font: 2.5em $title-font;
+    font: 2.7em $title-font;
     margin: 1.5em 0 1em;
+    text-shadow: 0 4px 5px rgba(0,0,0,.4);
   }
 
   .new-task {

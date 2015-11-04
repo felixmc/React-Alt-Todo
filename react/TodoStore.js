@@ -40,7 +40,7 @@ class TodoStore {
 
     debug('create task', task);
 
-    this.setState(function(state) {
+    this.setState(state => {
       let newState = state.update('tasks', tasks => tasks.set(task.id, Immutable.Map(task)));
       debug('create task new state', newState.toJS());
       return newState;
@@ -72,7 +72,7 @@ class TodoStore {
       });
 
       return newState;
-    } );
+    });
   }
 
 }
